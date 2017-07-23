@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<h1>Welcome here</h1>
+    <ul>
+        {% for ar in myxml %}
+            <li>{{ ar.loc }} + {{ ar.lastmod }}</li>
+            {% endfor %}
+    </ul>
+
+{% endblock %}
